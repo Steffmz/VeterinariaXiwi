@@ -1,8 +1,9 @@
 <?php
 $servername = "localhost";
-$username = "tu_usuario";
-$password = "tu_password";
-$dbname = "Veterinaria";
+// Usuario de MySQL (no el email de tu aplicación)
+$username = "root"; // <-- Usuario por defecto en XAMPP/WAMP
+$password = ""; // <-- Contraseña por defecto (usualmente vacía)
+$dbname = "VeterinariaXiwi"; // Nombre exacto de tu BD (case-sensitive)
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
